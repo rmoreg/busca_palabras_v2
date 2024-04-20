@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>pasapalabra_MainGUI</class>
+ <widget class="QDialog" name="pasapalabra_MainGUI">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>577</width>
+    <height>377</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(45, 45, 45);</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout" stretch="1,1,1,2,5,1,1">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,4">
+     <item>
+      <widget class="QFrame" name="menu_Heading_frame">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(85, 85, 255);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_16">
+        <item>
+         <widget class="QPushButton" name="menu_btn">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{	
+	color: rgb(0, 0, 0);
+	border: 0px solid;
+}
+
+</string>
+          </property>
+          <property name="text">
+           <string>Menu</string>
+          </property>
+          <property name="icon">
+           <iconset resource="../MUSE/BECAidr II/2 Trabajo/ESATAN2NASTRAN_PoyectoFinal/1 Programa Python/Iconos/setting_Icon.qrc">
+            <normaloff>:/newPrefix/menu_Icon.png</normaloff>:/newPrefix/menu_Icon.png</iconset>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="heading_Top_Label">
+       <property name="font">
+        <font>
+         <family>Segoe UI</family>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);
+border-bottom: 1px solid;
+border-color: rgb(124, 213, 210);</string>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;RAE &lt;/span&gt;Software&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="2,5,2,1">
+     <item>
+      <spacer name="horizontalSpacer_4">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_3">
+       <property name="styleSheet">
+        <string notr="true">color: rgb(144, 144, 144);</string>
+       </property>
+       <property name="text">
+        <string>Inputs files</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_5">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QLabel" name="lb_status">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <family>Segoe UI Semibold</family>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>ForbiddenCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);
+border: none;
+</string>
+       </property>
+       <property name="text">
+        <string>Status</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="2,5,2,1">
+     <item>
+      <widget class="QPushButton" name="search_File_btn">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <family>Segoe UI Semibold</family>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	color: rgb(255, 255, 255);
+	border: 0px solid;
+}
+
+QPushButton:hover{
+	background-color: rgb(85, 170, 255);
+
+}</string>
+       </property>
+       <property name="text">
+        <string>Search file</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../MUSE/BECAidr II/2 Trabajo/ESATAN2NASTRAN_PoyectoFinal/1 Programa Python/Iconos/folder_icon.qrc">
+         <normaloff>:/newPrefix/folder_incon_white.png</normaloff>:/newPrefix/folder_incon_white.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="file_Selected_Line">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <family>Segoe UI</family>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLineEdit{
+	color: rgb(255, 255, 255);
+	background-color: rgb(10, 10, 10);
+	border: 0px;
+	border-radius: 5px;
+}</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="file_load_btn">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <family>Segoe UI Semibold</family>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+border: 0px solid;
+background-color: rgb(80, 80, 80);
+border-radius: 2px;
+}
+
+QPushButton:hover{
+	background-color: rgb(85, 170, 255);
+
+}</string>
+       </property>
+       <property name="text">
+        <string>Load</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../MUSE/BECAidr II/2 Trabajo/ESATAN2NASTRAN_PoyectoFinal/1 Programa Python/Iconos/load_icon.qrc">
+         <normaloff>:/newPrefix/load_Icon_white.png</normaloff>:/newPrefix/load_Icon_white.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>14</width>
+         <height>14</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="file_load_Status">
+       <property name="font">
+        <font>
+         <family>Segoe UI Semibold</family>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>ForbiddenCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>Not Loaded</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_6" stretch="2,5,2,1">
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_2" stretch="1,1,1">
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="styleSheet">
+          <string notr="true">color: rgb(144, 144, 144);</string>
+         </property>
+         <property name="text">
+          <string>Sheets selection</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="excelSheets_comboBox">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(170, 255, 255);
+font: 8pt &quot;MS Shell Dlg 2&quot;;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QPushButton" name="getWords_btn">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <family>Segoe UI Semibold</family>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+border: 0px solid;
+background-color: rgb(80, 80, 80);
+border-radius: 2px;
+}
+
+QPushButton:hover{
+	background-color: rgb(85, 170, 255);
+
+}</string>
+       </property>
+       <property name="text">
+        <string>Get Words</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../MUSE/BECAidr II/2 Trabajo/ESATAN2NASTRAN_PoyectoFinal/1 Programa Python/Iconos/load_icon.qrc">
+         <normaloff>:/newPrefix/load_Icon_white.png</normaloff>:/newPrefix/load_Icon_white.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="words_load_Status">
+       <property name="font">
+        <font>
+         <family>Segoe UI Semibold</family>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>Not Loaded</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_4" stretch="1,4">
+     <item>
+      <widget class="QPushButton" name="pb_clear_log">
+       <property name="font">
+        <font>
+         <family>Segoe UI Semibold</family>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	color: rgb(255, 255, 255);
+	border: 0px solid;
+}
+
+QPushButton:hover{
+	background-color: rgb(85, 170, 255);
+
+}</string>
+       </property>
+       <property name="text">
+        <string>Clear Log</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../MUSE/BECAidr II/2 Trabajo/ESATAN2NASTRAN_PoyectoFinal/1 Programa Python/Iconos/setting_Icon.qrc">
+         <normaloff>:/newPrefix/clear_Icon.png</normaloff>:/newPrefix/clear_Icon.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPlainTextEdit" name="pt_log">
+       <property name="styleSheet">
+        <string notr="true">border: 0px solid;
+background-color: rgb(217, 217, 217);
+border-radius: 0px</string>
+       </property>
+       <property name="tabStopWidth">
+        <number>260</number>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_5" stretch="1,4">
+     <item>
+      <widget class="QPushButton" name="create_File_btn">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <family>Segoe UI Semibold</family>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	color: rgb(255, 255, 255);
+	border: 0px solid;
+}
+
+QPushButton:hover{
+	background-color: rgb(85, 170, 255);
+
+}</string>
+       </property>
+       <property name="text">
+        <string>Generate file</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../MUSE/BECAidr II/2 Trabajo/ESATAN2NASTRAN_PoyectoFinal/1 Programa Python/Iconos/setting_Icon.qrc">
+         <normaloff>:/newPrefix/mapping_Icon.png</normaloff>:/newPrefix/mapping_Icon.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_7">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QLabel" name="label_4">
+     <property name="styleSheet">
+      <string notr="true">color: rgb(144, 144, 144);</string>
+     </property>
+     <property name="text">
+      <string>Created by Raúl Moreno Ginés</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../MUSE/BECAidr II/2 Trabajo/ESATAN2NASTRAN_PoyectoFinal/1 Programa Python/Iconos/folder_icon.qrc"/>
+  <include location="../MUSE/BECAidr II/2 Trabajo/ESATAN2NASTRAN_PoyectoFinal/1 Programa Python/Iconos/load_icon.qrc"/>
+  <include location="../MUSE/BECAidr II/2 Trabajo/ESATAN2NASTRAN_PoyectoFinal/1 Programa Python/Iconos/setting_Icon.qrc"/>
+ </resources>
+ <connections/>
+</ui>
